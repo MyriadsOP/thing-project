@@ -1,25 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --header-bg: rgb(76,45,67)
+    --header-bg: rgb(76, 45, 67)
 }
 
 body {
-        background-color:rgb(38,27,45);
-        font-family:Roboto;
-}
+    background-color: rgb(38, 27, 45);
+    font-family: Quicksand, Roboto;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
 
 #header {
     display: flex;
     justify-content: space-between;
-    height:3rem;
-    padding:20px;
-    background-color: var(--header-bg);
-    margin-bottom: 50px;
-}
-
-#footer {
-
+    height: 8vh;
+    padding: 20px;
     background-color: var(--header-bg);
 }
 
@@ -27,48 +27,58 @@ body {
     display: flex;
     justify-self: flex-start;
     align-self: flex-start;
-    gap:16px;
+    gap: 16px;
 }
 
 #main-content-info {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin:30px;
 }
 
 #main-content-info .text {
     display: flex;
-    padding:20px;
+    padding: 20px;
     margin: 30;
-    align-self:normal;
+    align-self: normal;
     flex-direction: column;
-    background-color:rgb(45,38,49);
-    gap:16px;
+    background-color: rgb(45, 38, 49);
+    gap: 16px;
 }
 
 #main-content-info .title {
     font-weight: 900;
-    font-size:32px;
+    font-size: 32px;
 }
 
 #main-content-info .button {
     border-radius: 5px;
-    align-self:flex-start;
+    align-self: flex-start;
+}
+
+#content {
+    flex:1;
 }
 
 #content-heading {
     display: flex;
     justify-self: center;
+    padding: 20px;
+    font-weight: 900;
+    font-size: 34px;
 }
 
 #main {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #main img {
     width: 100px;
-    height:100px;
+    height: 100px;
+    justify-self: center;
+    align-self:center;
 }
 
 #main .first,
@@ -77,5 +87,19 @@ body {
 #main .fourth {
     display: flex;
     flex-direction: column;
-    gap:16px;
+    padding: 8px;
+}
+
+.content-description {
+    display: flex;
+    font-size: 12px;
+    width: 100px;
+    text-align: center;
+}
+
+#footer {
+    background-color: var(--header-bg);
+    min-height:6vh;
+    text-align: center;
+    align-items: center;
 }
