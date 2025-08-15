@@ -1,15 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+    --header-bg: rgb(76,45,67)
+}
+
 body {
-        background-color: #d80000;
+        background-color:rgb(38,27,45);
         font-family:Roboto;
 }
 
 #header {
     display: flex;
     justify-content: space-between;
-    height:5rem;
+    height:3rem;
     padding:20px;
+    background-color: var(--header-bg);
+    margin-bottom: 50px;
+}
+
+#footer {
+
+    background-color: var(--header-bg);
 }
 
 #right-buttons {
@@ -23,15 +34,16 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin:30px;
 }
 
 #main-content-info .text {
     display: flex;
     padding:20px;
-    margin-left:30px;
+    margin: 30;
     align-self:normal;
     flex-direction: column;
-    background-color: #362d3b;
+    background-color:rgb(45,38,49);
     gap:16px;
 }
 
@@ -43,4 +55,27 @@ body {
 #main-content-info .button {
     border-radius: 5px;
     align-self:flex-start;
+}
+
+#content-heading {
+    display: flex;
+    justify-self: center;
+}
+
+#main {
+    display: flex;
+}
+
+#main img {
+    width: 100px;
+    height:100px;
+}
+
+#main .first,
+#main .second,
+#main .third,
+#main .fourth {
+    display: flex;
+    flex-direction: column;
+    gap:16px;
 }
